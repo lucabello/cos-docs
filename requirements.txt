@@ -1,4 +1,6 @@
 mkdocs
+mkdocs-material
 pymdown-extensions
 mkdocs-autolinks-plugin
 mkdocs-macros-plugin
+
