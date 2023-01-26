@@ -40,3 +40,57 @@ This page contains the current status of all the charms managed by the Observabi
 | {{ repoentry("cos-proxy-operator") }}                    | {{ ghbadge("release-edge", "cos-proxy-operator") }} |
 | {{ repoentry("cos-tool", show_charmhub=False) }}         | {{ ghbadge("release", "cos-tool") }}                |
 | {{ repoentry("promql-transform", show_charmhub=False) }} | {{ ghbadge("release", "promql-transform") }}        |
+
+## Charmhub Releases
+
+To track the Charmhub release status, here's a useful bash script: 
+
+```bash title="charmhub-summary.sh" linenums="1"
+#!/usr/bin/env bash
+# Produce a summary report of the Charmhub release status for all charms
+
+charms="""
+  alertmanager-k8s
+  avalanche-k8s
+  catalogue-k8s
+  cos-configuration-k8s
+  grafana-agent-k8s
+  grafana-k8s
+  karma-k8s
+  loki-k8s
+  observability-libs
+  prometheus-k8s
+  prometheus-scrape-config-k8s
+  prometheus-scrape-target-k8s
+  traefik-k8s
+  traefik-route-k8s
+"""
+
+bundles="""
+  cos-lite
+"""
+
+others="""
+  cos-proxy
+"""
+
+# Make sure juju is installed
+juju --version >/dev/null || (echo "Juju needs to be installed! (snap install juju)" && exit 1)
+# Make sure yq is installed
+yq --version >/dev/null || (echo "yq needs to be installed! (snap install yq)" && exit 1)
+
+echo "# Charms\n"
+for charm in ${charms}; do
+  echo "## ${charm}" && juju info "${charm}" | yq .channels -r
+done
+
+echo "\n# Bundles\n"
+for bundle in ${bundles}; do
+  echo "## ${bundle}" && juju info "${bundle}" | yq .channels -r
+done
+
+echo "\n# Others\n"
+for other in ${others}; do
+  echo "## ${other}" && juju info "${other}" | yq .channels -r
+done
+```

@@ -3,3 +3,6 @@ site
 
 # Python
 __pycache__
+
+# Obsidian
+.obsidian
