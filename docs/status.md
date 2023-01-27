@@ -22,6 +22,7 @@ This page contains the current status of all the charms managed by the Observabi
 | {{ repoentry("loki-k8s-operator") }}                     | {{ ghbadge("release-edge", "loki-k8s-operator") }}                     | {{ ghbadge("release-libs", "loki-k8s-operator") }}                     |
 | {{ repoentry("observability-libs") }}                    | {{ ghbadge("release-edge", "observability-libs") }}                    | {{ ghbadge("release-libs", "observability-libs") }}                    |
 | {{ repoentry("prometheus-k8s-operator") }}               | {{ ghbadge("release-edge", "prometheus-k8s-operator") }}               | {{ ghbadge("release-libs", "prometheus-k8s-operator") }}               |
+| {{ repoentry("prometheus-pushgateway-k8s-operator") }}   | {{ ghbadge("release-edge", "prometheus-pushgateway-k8s-operator") }}   | {{ ghbadge("release-libs", "prometheus-pushgateway-k8s-operator") }}   |
 | {{ repoentry("prometheus-scrape-config-k8s-operator") }} | {{ ghbadge("release-edge", "prometheus-scrape-config-k8s-operator") }} | {{ ghbadge("release-libs", "prometheus-scrape-config-k8s-operator") }} |
 | {{ repoentry("prometheus-scrape-target-k8s-operator") }} | {{ ghbadge("release-edge", "prometheus-scrape-target-k8s-operator") }} | {{ ghbadge("release-libs", "prometheus-scrape-target-k8s-operator") }} |
 | {{ repoentry("traefik-k8s-operator") }}                  | {{ ghbadge("release-edge", "traefik-k8s-operator") }}                  | {{ ghbadge("release-libs", "traefik-k8s-operator") }}                  |
