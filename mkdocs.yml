@@ -14,7 +14,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  # Others
+  - pymdownx.caret
 plugins:
   - search
   - autolinks
+  - include-markdown
   - macros
