@@ -13,23 +13,23 @@ This page contains the current status of all the charms managed by the Observabi
 
 ### Charms
 
-| Charm                                                    | Release Charm                                                          | Release Libraries                                                      |
-| -------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| {{ repoentry("alertmanager-k8s-operator") }}             | {{ ghbadge("release-edge", "alertmanager-k8s-operator") }}             | {{ ghbadge("release-libs", "alertmanager-k8s-operator") }}             |
-| {{ repoentry("avalanche-k8s-operator") }}                | {{ ghbadge("release-edge", "avalanche-k8s-operator") }}                | {{ ghbadge("release-libs", "avalanche-k8s-operator") }}                |
-| {{ repoentry("catalogue-k8s-operator") }}                | {{ ghbadge("release-edge", "catalogue-k8s-operator") }}                | {{ ghbadge("release-libs", "catalogue-k8s-operator") }}                |
-| {{ repoentry("cos-configuration-k8s-operator") }}        | {{ ghbadge("release-edge", "cos-configuration-k8s-operator") }}        | {{ ghbadge("release-libs", "cos-configuration-k8s-operator") }}        |
-| {{ repoentry("grafana-agent-k8s-operator") }}            | {{ ghbadge("release-edge", "grafana-agent-k8s-operator") }}            | {{ ghbadge("release-libs", "grafana-agent-k8s-operator") }}            |
-| {{ repoentry("grafana-k8s-operator") }}                  | {{ ghbadge("release-edge", "grafana-k8s-operator") }}                  | {{ ghbadge("release-libs", "grafana-k8s-operator") }}                  |
-| {{ repoentry("karma-k8s-operator") }}                    | {{ ghbadge("release-edge", "karma-k8s-operator") }}                    | {{ ghbadge("release-libs", "karma-k8s-operator") }}                    |
-| {{ repoentry("loki-k8s-operator") }}                     | {{ ghbadge("release-edge", "loki-k8s-operator") }}                     | {{ ghbadge("release-libs", "loki-k8s-operator") }}                     |
-| {{ repoentry("observability-libs") }}                    | {{ ghbadge("release-edge", "observability-libs") }}                    | {{ ghbadge("release-libs", "observability-libs") }}                    |
-| {{ repoentry("prometheus-k8s-operator") }}               | {{ ghbadge("release-edge", "prometheus-k8s-operator") }}               | {{ ghbadge("release-libs", "prometheus-k8s-operator") }}               |
-| {{ repoentry("prometheus-pushgateway-k8s-operator") }}   | {{ ghbadge("release-edge", "prometheus-pushgateway-k8s-operator") }}   | {{ ghbadge("release-libs", "prometheus-pushgateway-k8s-operator") }}   |
-| {{ repoentry("prometheus-scrape-config-k8s-operator") }} | {{ ghbadge("release-edge", "prometheus-scrape-config-k8s-operator") }} | {{ ghbadge("release-libs", "prometheus-scrape-config-k8s-operator") }} |
-| {{ repoentry("prometheus-scrape-target-k8s-operator") }} | {{ ghbadge("release-edge", "prometheus-scrape-target-k8s-operator") }} | {{ ghbadge("release-libs", "prometheus-scrape-target-k8s-operator") }} |
-| {{ repoentry("traefik-k8s-operator") }}                  | {{ ghbadge("release-edge", "traefik-k8s-operator") }}                  | {{ ghbadge("release-libs", "traefik-k8s-operator") }}                  |
-| {{ repoentry("traefik-route-k8s-operator") }}            | {{ ghbadge("release-edge", "traefik-route-k8s-operator") }}            | {{ ghbadge("release-libs", "traefik-route-k8s-operator") }}            |
+| Charm                                                    | Release Charm                                                          | Release Libraries                                               |
+| -------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
+| {{ repoentry("alertmanager-k8s-operator") }}             | {{ ghbadge("release-edge", "alertmanager-k8s-operator") }}             | {{ ghbadge("release-libs", "alertmanager-k8s-operator") }}      |
+| {{ repoentry("avalanche-k8s-operator") }}                | {{ ghbadge("release-edge", "avalanche-k8s-operator") }}                | (no libraries)                                                  |
+| {{ repoentry("catalogue-k8s-operator") }}                | {{ ghbadge("release-edge", "catalogue-k8s-operator") }}                | {{ ghbadge("release-libs", "catalogue-k8s-operator") }}         |
+| {{ repoentry("cos-configuration-k8s-operator") }}        | {{ ghbadge("release-edge", "cos-configuration-k8s-operator") }}        | {{ ghbadge("release-libs", "cos-configuration-k8s-operator") }} |
+| {{ repoentry("grafana-agent-k8s-operator") }}            | {{ ghbadge("release-edge", "grafana-agent-k8s-operator") }}            | {{ ghbadge("release-libs", "grafana-agent-k8s-operator") }}     |
+| {{ repoentry("grafana-k8s-operator") }}                  | {{ ghbadge("release-edge", "grafana-k8s-operator") }}                  | {{ ghbadge("release-libs", "grafana-k8s-operator") }}           |
+| {{ repoentry("karma-k8s-operator") }}                    | {{ ghbadge("release-edge", "karma-k8s-operator") }}                    | {{ ghbadge("release-libs", "karma-k8s-operator") }}             |
+| {{ repoentry("loki-k8s-operator") }}                     | {{ ghbadge("release-edge", "loki-k8s-operator") }}                     | {{ ghbadge("release-libs", "loki-k8s-operator") }}              |
+| {{ repoentry("observability-libs") }}                    | {{ ghbadge("release-edge", "observability-libs") }}                    | {{ ghbadge("release-libs", "observability-libs") }}             |
+| {{ repoentry("prometheus-k8s-operator") }}               | {{ ghbadge("release-edge", "prometheus-k8s-operator") }}               | {{ ghbadge("release-libs", "prometheus-k8s-operator") }}        |
+| {{ repoentry("prometheus-pushgateway-k8s-operator") }}   | {{ ghbadge("release-edge", "prometheus-pushgateway-k8s-operator") }}   | (no libraries)                                                  |
+| {{ repoentry("prometheus-scrape-config-k8s-operator") }} | {{ ghbadge("release-edge", "prometheus-scrape-config-k8s-operator") }} | (no libraries)                                                  |
+| {{ repoentry("prometheus-scrape-target-k8s-operator") }} | {{ ghbadge("release-edge", "prometheus-scrape-target-k8s-operator") }} | (no libraries)                                                  |
+| {{ repoentry("traefik-k8s-operator") }}                  | {{ ghbadge("release-edge", "traefik-k8s-operator") }}                  | {{ ghbadge("release-libs", "traefik-k8s-operator") }}           |
+| {{ repoentry("traefik-route-k8s-operator") }}            | {{ ghbadge("release-edge", "traefik-route-k8s-operator") }}            | {{ ghbadge("release-libs", "traefik-route-k8s-operator") }}     |
 
 ### Bundles
 
