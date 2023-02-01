@@ -78,11 +78,11 @@ def _release_row(release_dict, charm, track):
     ]
 
 def add_release_table(doc, releases_dict, track, title):
-    doc.add_header(title, level=4)
     doc.add_table(
-        ["Charm", f"{track}/stable", f"{track}/candidate", f"{track}/beta", f"{track}/edge"],
+        [title, f"{track}/stable", f"{track}/candidate", f"{track}/beta", f"{track}/edge"],
         [_release_row(release, charm, track) for charm, release in releases_dict.items()],
-        [Table.Align.LEFT, Table.Align.CENTER, Table.Align.CENTER, Table.Align.CENTER, Table.Align.CENTER]
+        [Table.Align.LEFT, Table.Align.CENTER, Table.Align.CENTER, Table.Align.CENTER, Table.Align.CENTER],
+        indent=4
     )
 
 
@@ -90,11 +90,11 @@ doc = Document("CHARMHUB_RELEASES")
 
 doc.add_header("Charmhub Releases", level=2)
 doc.add_paragraph("These tables are updated by a script running periodically every hour, based on `juju info`. Times are in UTC (GMT+0).")
-doc.add_header("latest", level=3)
+doc.add_paragraph('=== "latest"')
 add_release_table(doc, charm_releases, "latest", "Charms")
 add_release_table(doc, bundle_releases, "latest", "Bundles")
 add_release_table(doc, other_releases, "latest", "Others")
-doc.add_header("1.0", level=3)
+doc.add_paragraph('=== "1.0"')
 add_release_table(doc, charm_releases, "1.0", "Charms")
 add_release_table(doc, bundle_releases, "1.0", "Bundles")
 add_release_table(doc, other_releases, "1.0", "Others")

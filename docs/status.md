@@ -4,14 +4,11 @@ summary: A page with the status of Canonical's Observability repos.
 author: Luca Bello
 date: 2023-01-25
 ---
-
 # Status
 
 This page contains the current status of all the charms managed by the Observability team.
 
 ## Github CI
-
-### Charms
 
 | Charm                                                    | Release Charm                                                          | Release Libraries                                               |
 | -------------------------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
@@ -31,13 +28,9 @@ This page contains the current status of all the charms managed by the Observabi
 | {{ repoentry("traefik-k8s-operator") }}                  | {{ ghbadge("release-edge", "traefik-k8s-operator") }}                  | {{ ghbadge("release-libs", "traefik-k8s-operator") }}           |
 | {{ repoentry("traefik-route-k8s-operator") }}            | {{ ghbadge("release-edge", "traefik-route-k8s-operator") }}            | {{ ghbadge("release-libs", "traefik-route-k8s-operator") }}     |
 
-### Bundles
-
 | Bundle                             | Test Suite                             | Matrix Tests                               |
 | ---------------------------------- | -------------------------------------- | ------------------------------------------ |
 | {{ repoentry("cos-lite-bundle") }} | {{ ghbadge("ci", "cos-lite-bundle") }} | {{ ghbadge("matrix", "cos-lite-bundle") }} |
-
-### Others
 
 | Others                                                   | Release                                             |
 | -------------------------------------------------------- | --------------------------------------------------- |
@@ -45,14 +38,11 @@ This page contains the current status of all the charms managed by the Observabi
 | {{ repoentry("cos-tool", show_charmhub=False) }}         | {{ ghbadge("release", "cos-tool") }}                |
 | {{ repoentry("promql-transform", show_charmhub=False) }} | {{ ghbadge("release", "promql-transform") }}        |
 
-
 {%
   include-markdown "../CHARMHUB_RELEASES.md"
 %}
 
 ## Manual checks
-
-### Charmhub Releases
 
 To track the Charmhub release status, here's a useful bash script: 
 
