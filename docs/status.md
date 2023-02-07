@@ -15,12 +15,12 @@ This page contains the current status of all the charms managed by the Observabi
 | {{ repoentry("alertmanager-k8s-operator") }}             | {{ ghbadge("release-edge", "alertmanager-k8s-operator") }}             | {{ ghbadge("release-libs", "alertmanager-k8s-operator") }}      |
 | {{ repoentry("avalanche-k8s-operator") }}                | {{ ghbadge("release-edge", "avalanche-k8s-operator") }}                | (no libraries)                                                  |
 | {{ repoentry("catalogue-k8s-operator") }}                | {{ ghbadge("release-edge", "catalogue-k8s-operator") }}                | {{ ghbadge("release-libs", "catalogue-k8s-operator") }}         |
-| {{ repoentry("cos-configuration-k8s-operator") }}        | {{ ghbadge("release-edge", "cos-configuration-k8s-operator") }}        | {{ ghbadge("release-libs", "cos-configuration-k8s-operator") }} |
+| {{ repoentry("cos-configuration-k8s-operator") }}        | {{ ghbadge("release-edge", "cos-configuration-k8s-operator") }}        | (no libraries)                                                  |
 | {{ repoentry("grafana-agent-k8s-operator") }}            | {{ ghbadge("release-edge", "grafana-agent-k8s-operator") }}            | {{ ghbadge("release-libs", "grafana-agent-k8s-operator") }}     |
 | {{ repoentry("grafana-k8s-operator") }}                  | {{ ghbadge("release-edge", "grafana-k8s-operator") }}                  | {{ ghbadge("release-libs", "grafana-k8s-operator") }}           |
 | {{ repoentry("karma-k8s-operator") }}                    | {{ ghbadge("release-edge", "karma-k8s-operator") }}                    | {{ ghbadge("release-libs", "karma-k8s-operator") }}             |
 | {{ repoentry("loki-k8s-operator") }}                     | {{ ghbadge("release-edge", "loki-k8s-operator") }}                     | {{ ghbadge("release-libs", "loki-k8s-operator") }}              |
-| {{ repoentry("observability-libs") }}                    | {{ ghbadge("release-edge", "observability-libs") }}                    | {{ ghbadge("release-libs", "observability-libs") }}             |
+| {{ repoentry("mimir-k8s-operator") }}                    | {{ ghbadge("release-edge", "mimir-k8s-operator") }}                    | {{ ghbadge("release-libs", "mimir-k8s-operator") }}             |
 | {{ repoentry("prometheus-k8s-operator") }}               | {{ ghbadge("release-edge", "prometheus-k8s-operator") }}               | {{ ghbadge("release-libs", "prometheus-k8s-operator") }}        |
 | {{ repoentry("prometheus-pushgateway-k8s-operator") }}   | {{ ghbadge("release-edge", "prometheus-pushgateway-k8s-operator") }}   | (no libraries)                                                  |
 | {{ repoentry("prometheus-scrape-config-k8s-operator") }} | {{ ghbadge("release-edge", "prometheus-scrape-config-k8s-operator") }} | (no libraries)                                                  |
@@ -36,6 +36,7 @@ This page contains the current status of all the charms managed by the Observabi
 | -------------------------------------------------------- | --------------------------------------------------- |
 | {{ repoentry("cos-proxy-operator") }}                    | {{ ghbadge("release-edge", "cos-proxy-operator") }} |
 | {{ repoentry("cos-tool", show_charmhub=False) }}         | {{ ghbadge("release", "cos-tool") }}                |
+| {{ repoentry("observability-libs") }}                    | {{ ghbadge("release-libs", "observability-libs") }} |
 | {{ repoentry("promql-transform", show_charmhub=False) }} | {{ ghbadge("release", "promql-transform") }}        |
 
 {%
